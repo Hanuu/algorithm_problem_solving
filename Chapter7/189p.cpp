@@ -5,7 +5,7 @@ using namespace std;
 
 char answer[1000];
 
-string reverse(string::iterator &it){
+string reverse(string::iterator it){
     char head = *it;
     ++it;
     if(head=='b'){
@@ -32,6 +32,6 @@ int main(){
         scanf("%s",picture);
         printf("%s\n",picture);
         string::iterator it = picture.begin();
-        cout << reverse(it)<<endl;
+        cout << reverse(*it)<<endl;
     }
 }
