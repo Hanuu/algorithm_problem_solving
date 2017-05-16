@@ -30,5 +30,16 @@ int main(){
     for(list<int>::iterator iterPos2=list2.begin();iterPos2!=list2.end();iterPos2++){
         cout<< *iterPos2 <<endl;
     }
+    list<int>::iterator iterPos3=list1.begin();
+    list1.erase(++iterPos3);
     
+    list2.erase(++list2.begin(),--list2.end());
+    cout<< "list1 printing..."<<endl;
+    for(list<int>::iterator iterPos=list1.begin();iterPos!=iterEnd;iterPos++){
+        cout<<*iterPos<<endl;
+    }
+    cout<<"list2 printing..."<<endl;
+    for(list<int>::iterator iterPos2=list2.begin();iterPos2!=list2.end();iterPos2++){
+        cout<< *iterPos2 <<endl;
+    }
 }
